@@ -1,0 +1,35 @@
+.header {
+  margin: 6.1rem 2rem;
+}
+
+.header__content {
+  text-align: center;
+}
+
+.header__content__title {
+  font-size: var(--title-md);
+}
+
+.header__content__subtitle {
+  font-size: var(--subtitle-md);
+}
+
+@media (max-width: 576px) {
+  .header__content__title {
+    font-size: var(--title-md-sm);
+  }
+  
+  .header__content__subtitle {
+    font-size: var(--subtitle-md-sm);
+  }
+}
+
+@media (max-width: 376px) {
+  .header__content__title {
+    font-size: var(--title-sm);
+  }
+  
+  .header__content__subtitle {
+    font-size: var(--subtitle-sm);
+  }
+}

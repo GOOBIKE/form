@@ -1,0 +1,24 @@
+:root {
+
+  --white: #F2F2F2;
+  --green: #8de627;
+  --grey: #8d8d8d;
+  --linear-gold: linear-gradient(180deg, #FFEE59 0%, #FFC24B 100%);
+  --linear-gold-hover: linear-gradient(180deg, #FFEE59 0%, #FFAA04 100%);
+  --yellow: #FFEE59;
+  --dark-blue: #0c0a22;
+  
+  font-size: 10px;
+
+  --title-md: 3.6rem;
+  --subtitle-md: 1.8rem;
+
+  --title-md-sm: 3.2rem;
+  --subtitle-md-sm: 1.6rem;
+
+  --title-sm: 2.4rem;
+  --subtitle-sm: 1.2rem;
+
+  --text-md: 1.6rem; 
+  --text-sm: 1.2rem;  
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/x-icon" href="./assets/img/logo.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Antic&family=Julius+Sans+One&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./assets/css/variables.css"/>
+  <link rel="stylesheet" href="./assets/css/reset.css"/>
+  <link rel="stylesheet" href="./assets/css/header.css"/>
+  <link rel="stylesheet" href="./assets/css/main.css"/>
+  <link rel="stylesheet" href="./assets/css/footer.css"/>
+
+  <title>Formulário de Inscrição</title>
+</head>
+<body>
+
+  <header class="header">
+    <span class="header__content">
+      <h2 class="header__content__subtitle">DevTech</h2>
+      <h1 class="header__content__title">Tecnologia e Inovação</h1>
+    </span>
+  </header>
+
+  <main class="main">
+    <span class="main__box-text">
+      <p>Inscreva-se na nossa Aplicação e veja quais são as Novidades</p>
+      <p>Preencha o formulário e retornaremos o contato.</p>
+    </span>
+
+    <form action="javascript:void(0)" id="form" method="post" class="main__form">
+      <label for="nome" class="main__form__label">
+        <span class="main__form__label__text">Nome Completo</span>
+        <input type="text" name="nome" id="nome" autofocus placeholder="Digite seu nome..." required/>
+      </label>
+
+      <label for="email" class="main__form__label">
+        <span class="main__form__label__text">Email</span>
+        <input type="email" name="email" id="email" placeholder="Digite seu email..." required/>
+      </label>
+
+      <label for="dt_nascimento" class="main__form__label">
+        <span class="main__form__label__text">Data de nascimento</span>    
+        <input type="date" name="dt_nascimento" id="dt_nascimento" required/>
+      </label>
+
+      <label for="listaProvincias" class="main__form__label">
+        <span class="main__form__label__text">Provincia</span>
+        <div class="main__form__label__select">
+          <select name="listaProvincias" id="listaProvincias" required>
+          </select>
+        </div>
+      </label>
+      
+      <label for="listaMunicipios" class="main__form__label" style="display: none" id="labelMunicipios">
+        <span class="main__form__label__text">Município</span>
+        <div class="main__form__label__select">
+          <select name="listaMunicipios" id="listaMunicipios" required>
+          </select>
+        </div>
+      </label>
+
+      <label for="listaDistritos" class="main__form__label" style="display: none" id="labelDistritos">
+        <span class="main__form__label__text">Distrito</span>
+        <div class="main__form__label__select">
+          <select name="listaDistritos" id="listaDistritos" required>
+          </select>
+        </div>
+      </label>
+
+      <label for="periodo" class="main__form__label">
+        <span class="main__form__label__text">Período de contato</span>
+        <div class="main__form__label__select">
+          <select name="periodo" required>
+            <option value="manha">Manhã</option>
+            <option value="tarde" selected>Tarde</option>
+            <option value="noite">Noite</option>
+          </select>
+      </div>
+      </label>
+
+      
+      <p class="main__form__label__text">
+        Autorizar contato por telefone
+      </p>
+      <input class="main__form__input--switch" name="switch" type="checkbox" id="switch"/>
+      <label class="main__form__label--switch" for="switch"></label>
+
+      <input class="main__form__button" type="submit" id="submit" value="Enviar"/>
+
+    </form>
+
+    <!-- veja os dados inseridos no console :) -->
+    <div class="main__modal-sucess">
+      <p>Formulário enviado com sucesso!</p>
+      <p>Um de nossos consultores entrará em contato.</p>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__content">
+      <div class="footer__content__list">
+        <ul class="footer__content__list__ul">
+          <li>
+            <a href="https://www.instagram.com/midas_mais/">
+              <img src="./assets/img/icon_instagram.svg" alt="icon instagram">
+              <p>@devtch</p>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:comercial@infoideias.com.br">
+              <img src="./assets/img/icon_email.svg" alt="icon email">
+              <p>contato@devtch.co.ao</p>
+              </a>
+          </li>
+          <li>
+            <a href="https://api.whatsapp.com/send/?phone=%2B5517996666092&text=Olá,+Paola!+Gostamos+do+seu+trabalho+e+queremos+contratá-la+:)&type=phone_number&app_absent=0">
+              <img src="./assets/img/icon_wpp.svg" alt="icon whatsapp">
+              <p>+244 926-195-572 / 955-371-762 </p>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.midasmais.com.br">
+              <img src="./assets/img/icon_site.svg" alt="icon site">
+              <p>devtech.com</p>
+            </a>
+          </li>
+          <li>
+            <p>Todos os direitos reservados</p>
+          </li>
+        </ul>
+      </div>
+      <!-- passe o mouse por mim :p -->
+      <div class="footer__content__logo">
+        <img src="./assets/img/logo.svg" alt="icone imobiliaria" />
+      </div>
+    </div>
+    
+  </footer>
+
+  <img class="background" src="./assets/img/background.png"/>
+  <script type="module" src="./assets/js/main.js"></script>
+
+</body>
+</html>
